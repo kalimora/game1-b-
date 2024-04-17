@@ -1,0 +1,77 @@
+{
+    "Title": "Dog House",
+    "Credits": "Created by Kaylee Morales (kalimora@ucsc.edu).",
+    "InitialLocation": "Front of the house",
+    "Locations": {
+        "Front of the house": {
+            "Body": "You seem to be outside of a house. You see the front door with cute garden gnomes to the side of the door.",
+            "Choices": [
+                {
+                    "Text": "Open the door?",
+                    "Target": "Living room"
+                }
+            ]
+        },
+        "Living room": {
+            "Body": "You head inside and you see the living room for the house. There seems to be a door that leads to the kitchen, and stairs that go upstairs.",
+            "Choices": [
+                {
+                    "Text": "Go upstairs?",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Open the door?",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Hallway": {
+            "Body": "You are now in a hallway. You see a door to your right that has barking from inside. There is a note on the door that reads: 'The door is locked. You need to find the key to open it.' You also see a drawer next to it.",
+            "Choices": [
+                {
+                    "Text": "Open the drawer?",
+                    "Target": "Key"
+                },
+                {
+                    "Text": "Go downstairs?",
+                    "Target": "Living room"
+                }
+            ]
+        },
+        "Key": {
+            "Body": "You found a key inside the drawer!",
+            "Choices": [
+                {
+                    "Text": "Open the door?",
+                    "Target": "Room"
+                }
+            ]
+        },
+        "Room": {
+            "Body": "You open the door and find the main room with a dog inside! You get a text from the owner of the house to take care of him and that there is stuff for the dog in the kitchen pantry!",
+            "Choices": []
+        },
+        "Kitchen": {
+            "Body": "You are now in the kitchen.",
+            "Choices": [
+                {
+                    "Text": "Grab a snack?",
+                    "Target": "Hungry"
+                },
+                {
+                    "Text": "Go back to the living room? ",
+                    "Target": "Living room"
+                }
+            ]
+        },
+        "Hungry": {
+            "Body": "You felt hungry and ate goldfish!",
+            "Choices": [
+                {
+                    "Text": "You should probably find out why you are here.",
+                    "Target": "Kitchen"
+                }
+            ]
+        }
+    }
+}
